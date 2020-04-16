@@ -34,6 +34,8 @@ n = 86400/(2*pi)*((GMe/a.^3).^(0.5));        %%% Mean daily motion, n of the orb
 t0 = 1/n;                                 %%% Orbital period,t0
 %t = JulianDay(D,M,Y,H,m,s);%%% Julian Day calc function. Refer to
 %JulianDay.m
+%%% Change the above comment to generalise the time. This was part of an assignment to show position at arbitrary times.
+%%% Make sure you pull the JulianDay.m function for this to work
 t = 2437728.500001;                        %%% This is in the main code because I was unsure of time to be entered into the function.
 T = (t-2451545.0)/36525;
 GST = 280.46061837 + 360.98564736629*(t-2451545.0) + 0.000387933*(T.^2) - (T.^3)/38710000;
